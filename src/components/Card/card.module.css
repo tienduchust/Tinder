@@ -1,0 +1,84 @@
+/*
+Begin Styling for Card module
+*/
+.card {
+  display: flex;
+  width: 350px;
+  height: 400px;
+  box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+  flex-direction: column;
+  align-items: stretch !important;
+  position: relative;
+  border-radius: 0.42rem;
+  background-color: #fff;
+}
+
+/* Begin Card Title */
+.card_title {
+  flex: 0 1 172px;
+  width: 100%;
+}
+
+.card_title__background {
+  width: inherit;
+  position: absolute;
+  top: 0px;
+  height: calc(1rem + 80px); /* padding + 2/3 chiều cao của imgae*/
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+.card_title__picture {
+  position: absolute;
+  width: inherit;
+  padding: 1rem 0;
+}
+.card_title__picture img {
+  background-color: #fff;
+  padding: 0.2rem;
+  border: 1px solid #58595b;
+  border-radius: 50%;
+}
+/* End Card Title */
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+}
+.card_body__info {
+  flex: 1;
+}
+.card_body__info .content_item {
+  display: none;
+}
+.card_body__info .content_item.content_item__active {
+  display: inline;
+}
+.card_body__info h4 {
+  color: #999a99;
+}
+.card_body__info p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card_body__action {
+  bottom: 0;
+  flex: 0 0 50px;
+}
+.card_body__action__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card_body__action__wrapper .action_item {
+  padding: 15px 5px 5px 5px;
+}
+.card_body__action__wrapper .action_item.action_item__active {
+  border-top: 3px solid #bcd499;
+}
+/*
+End styling
+*/

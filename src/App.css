@@ -1,38 +1,39 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #eef0f8;
+  padding: 50px 50px;
+  height: 100%;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#myFavor {
+  max-height: 400px;
+  width: 400px;
+  overflow: scroll;
+  border: 1px solid #aaa;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#myFavor .favor-list {
+  list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#myFavor .favor-list img {
+  border-radius: 50%;
+}
+#myFavor .favor-list .description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h4 {
+  margin: 0px 0px 0.2rem 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.tinder{
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+  .tinder{
+    display: flex;
+    flex-direction: column;
   }
 }

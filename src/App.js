@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import Tinder from "./containers/Tinder";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faUser,
+  faCalendar,
+  faMap,
+  faPhone,
+  faLock,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faUser, faCalendar, faMap, faPhone, faLock);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* preload: Load trước 10 friend và 8 bức hình đầu tiên */}
+      <Tinder preLoad={10} preLoadImage={8} />
     </div>
   );
 }
